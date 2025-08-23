@@ -1,0 +1,40 @@
+.project-card-container {
+    position: relative;
+    width: 40vh;
+    height: 20vh;
+    margin: 3vh;
+    border-radius: 1vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-white-pure);
+    box-shadow: var(--primary-shadow);
+    transition: transform 0.1s ease-out;
+    cursor: pointer;
+}
+
+.project-card-container:hover {
+    transform: scale(1.1);
+}
+
+img {
+    position: absolute;
+    width: 36vh;
+    height: 16vh;
+    margin: 2vh;
+    border-radius: 1vh;
+    object-fit: cover;
+}
+
+.title-background {
+    position: absolute;
+    padding-left: 1vh;
+    border-radius: 0.9vh;
+    background-color: var(--background-white-pure);
+}
+
+h3 {
+    margin: 0;
+    padding: 2vh 2vh 1.5vh 2vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

@@ -1,0 +1,73 @@
+.projects-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-grid {
+    height: 100%;
+    max-height: 100%;
+    padding: 3vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.project-popup {
+    position: fixed;
+    height: calc(100% - 6vh);
+    width: 50%;
+    top: 6vh;
+    padding: 3vh 2vw;
+    border-radius: 1vh;
+    background-color: var(--background-white);
+    box-shadow: var(--primary-shadow);
+    overflow: scroll;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-popup.open {
+    transform: translateY(0);
+}
+
+markdown {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+}
+
+.close-project-button {
+    position: absolute;
+    width: 3vh;
+    height: 3vh;
+    left: calc((100% - 5vh) / 4 * 3 + 2vw + 2vh + 5vh);
+    top: 2vh;
+    padding: 1vh;
+    border-radius: 1vh;
+    background-color: var(--background-white);
+    transition: transform 0.1s ease-out, background-color 0.1s ease-out, opacity 0.1s ease-out;
+    box-shadow: var(--shadow-button);
+    transform: scale(0.2);
+    opacity: 0;
+    font-size: 1.6vh;
+}
+
+.close-project-button.open:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.close-project-button.open {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.close-project-button-icon {
+    width: 100%;
+    height: 100%;
+}

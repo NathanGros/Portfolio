@@ -1,0 +1,12 @@
+<div class="projects-container">
+    <div class="projects-grid">
+        <app-project-card class="project-card" *ngFor="let project of sortedProjects" [title]="project.name" [image]="project.image" (click)="openProject(project)">
+        </app-project-card>
+    </div>
+    <div class="project-popup" [class.open]="selectedProject">
+        <markdown [src]="selectedProject?.markdown"></markdown>
+    </div>
+    <div class="close-project-button" [class.open]="selectedProject" (click)="closeProject()">
+        <img src="close_button.png" class="close-project-button-icon" />
+    </div>
+</div>
