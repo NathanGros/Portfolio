@@ -1,4 +1,4 @@
-.home-content-container {
+.contact-content-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -7,9 +7,9 @@
     align-items: center;
 }
 
-.home-content-right-side {
+.contact-content {
     padding: 5%;
-    width: 40%;
+    max-width: 70%;
     max-height: 80%;
     background-color: var(--background-white-pure);
     box-shadow: var(--primary-shadow);
@@ -17,33 +17,35 @@
     overflow: scroll;
 }
 
-img {
-    width: 40%;
-    margin-right: 5%;
-    box-shadow: var(--primary-shadow);
-    border-radius: 100%;
-}
-
 .title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 4rem;
+    font-size: 2.2rem;
 }
 
 .subtitle {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 1.5rem;
 }
 
-.paragraph {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+.mail-adress-container {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: row;
     font-size: 1.2rem;
+    align-items: center;
 }
 
-.hyperlink {
+.mail-adress {
     text-decoration: underline;
-    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.mail-adress:hover {
+    cursor: pointer;
 }
 
 .button {

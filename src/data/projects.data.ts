@@ -15,4 +15,11 @@ export const PROJECTS: Project[] = [
         markdown: 'projects/markdown/project2.md',
         date: '2000-01-02'
     },
+    {
+        id: 'project3',
+        name: 'Project 3',
+        image: 'projects/images/project3.png',
+        markdown: 'projects/markdown/project3.md',
+        date: '2000-01-03'
+    },
 ];
