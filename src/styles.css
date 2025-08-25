@@ -1,10 +1,12 @@
 :root {
     --primary: #a070ff;
     --secondary: #8040ff;
-    --background-white-pure: #ffffff;
+    --background-white-pure: #fff;
     --background-white: #f0f0f1;
     --background-gray: #e0e0e2;
-    --text: #333333;
+    --background-black: #323b4c;
+    --text: #333;
+    --text-white: #fff;
 
     --shadow-button: 0 0 0.5vh rgba(0, 0, 0, 0.4);
     --shadow-big-button: 0 0 1vh rgba(0, 0, 0, 0.4);
