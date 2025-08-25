@@ -4,7 +4,7 @@
         </app-project-card>
     </div>
     <div class="project-popup" [class.open]="selectedProject">
-        <div class="project-popup-content">
+        <div class="project-popup-content" id="project-popup-content">
             <markdown [src]="selectedProject?.markdown"></markdown>
         </div>
     </div>

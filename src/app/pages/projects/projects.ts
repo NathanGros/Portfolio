@@ -4,7 +4,7 @@ import { PROJECTS } from '../../../data/projects.data';
 import { Project } from '../../../models/project.model';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProjectCard } from '../../components/projects/project-card/project-card';
 
 @Component({
@@ -41,15 +41,24 @@ export class Projects implements OnInit {
             this.selectedProject = null;
             setTimeout(() => {
                 this.selectedProject = project;
+                this.resetScroll()
             }, 300);
         }
         else {
             this.selectedProject = project;
+            this.resetScroll()
         }
     }
 
     closeProject() {
         this.selectedProject = null;
         this.router.navigate(['/projects'], { replaceUrl: false });
+    }
+
+    resetScroll() {
+        setTimeout(() => {
+            const popup = document.getElementById('project-popup-content');
+            if (popup) popup.scrollTop = 0;
+        }, 50);
     }
 }

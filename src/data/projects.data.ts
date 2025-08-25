@@ -8,4 +8,11 @@ export const PROJECTS: Project[] = [
         markdown: 'projects/voronoi-cells/content.md',
         date: '2025-08-19'
     },
+    {
+        id: 'rock-paper-scissors',
+        name: 'Rock Paper Scissors',
+        image: 'projects/rock-paper-scissors/thumbnail.png',
+        markdown: 'projects/rock-paper-scissors/content.md',
+        date: '2024-06-17'
+    },
 ];
