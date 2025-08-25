@@ -53,3 +53,12 @@
 .navbar-button:hover {
     transform: scale(1.1);
 }
+
+.active {
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.active:hover {
+    transform: scale(1.2);
+}
