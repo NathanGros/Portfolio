@@ -53,11 +53,12 @@ img {
     background-color: var(--background-gray);
     box-shadow: var(--shadow-button);
     border-radius: 0.5vh;
-    transition: transform 0.1s ease-out;
+    transition: transform 0.1s ease-out, background-color 0.1s ease-out;
 }
 
 .button:hover {
     transform: scale(1.1);
+    background-color: var(--background-white);
 }
 
 .buttons-footer {

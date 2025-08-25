@@ -3,5 +3,5 @@ export interface Project {
     name: string;
     image: string;
     markdown: string;
-    date: string | Date
+    date: string | Date //yyyy-mm-dd
 }
