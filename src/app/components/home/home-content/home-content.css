@@ -38,12 +38,12 @@ img {
 .paragraph {
     margin-top: 5vh;
     margin-bottom: 5vh;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .hyperlink {
     text-decoration: underline;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .button {

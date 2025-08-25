@@ -7,8 +7,11 @@ import { About } from './pages/about/about';
 
 export const routes: Routes = [
     { path: '', component: Home },
-    { path: 'projects', component: Projects },
-    { path: 'projects/:id', component: Projects },
+    {
+        path: 'projects', component: Projects, children: [
+            { path: ':id', component: Projects },
+        ]
+    },
     { path: 'contact', component: Contact },
     { path: 'about', component: About },
     { path: '**', component: NotFoundPage },
