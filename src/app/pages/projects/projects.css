@@ -61,7 +61,7 @@ markdown {
     width: 3vh;
     height: 3vh;
     left: calc((100% - 5vh) / 4 * 3 + 2vw + 2vh + 5vh);
-    top: 2vh;
+    top: calc(50% - 3vh);
     padding: 1vh;
     border-radius: 1vh;
     background-color: var(--background-white-pure);
